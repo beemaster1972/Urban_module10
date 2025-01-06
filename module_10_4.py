@@ -32,6 +32,11 @@ class Cafe:
         self.queue = Queue()
 
     def guest_arrival(self, *guests):
+<<<<<<<<<<<<<<  ✨ Codeium Command ⭐ >>>>>>>>>>>>>>>>
+    """
+    When a guest arrives, he takes a free table if there is one. Otherwise, he is put in the queue.
+    """
+<<<<<<<  7cf6452f-41fc-432a-80e5-0bfaa498a94f  >>>>>>>
         for guest in guests:
             if not isinstance(guest, Guest):
                 continue
@@ -46,6 +51,12 @@ class Cafe:
             guest.start()
 
     def discuss_guests(self):
+<<<<<<<<<<<<<<  ✨ Codeium Command ⭐ >>>>>>>>>>>>>>>>
+    """
+    Check all tables and guests. If a table is empty and there is a guest in the queue, seat the guest.
+    If a guest is finished with eating, free up the table and put it back in the queue of free tables.
+    """
+<<<<<<<  c4300e30-4604-4586-a430-80e577dfc3e0  >>>>>>>
         while not self.queue.empty() or self.empty_tables.qsize() < self.tables_number:
             for table in self.tables.values():
                 if table.guest is None:
