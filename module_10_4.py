@@ -72,7 +72,7 @@ class Cafe:
                     print(f"Стол номер {table.number} свободен")
                     self.tables[table.number].guest = None
                     self.empty_tables.put(table.number)
-
+Module10
 if __name__ == '__main__':
     tables = [Table(number) for number in range(1, 6)]
     # Имена гостей
